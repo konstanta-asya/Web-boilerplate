@@ -1,21 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 
-   <head itemscope itemtype="http://schema.org/WebSite">
+<head itemscope itemtype="http://schema.org/WebSite">
 
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="msapplication-tap-highlight" content="no">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <title>Project</title>
+    <title>Teachinder</title>
 
-      <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/app.css">
 
-   </head>
+</head>
 
-   <body itemscope itemtype="http://schema.org/WebPage">
-      <script type="text/javascript" src="./js/app.js"></script>
-      
-  </body>
+<body itemscope itemtype="http://schema.org/WebPage">
+<header class="header">
+    <a class="logo" href="#">Teachinder</a>
+    <form class="search">
+        <input type="text" placeholder="Name, note or age to search">
+        <button>Search</button>
+    </form>
+</header>
+<nav class="nav">
+    <ul class="navlist">
+        <li><a href="#teachers">Teachers</a></li>
+        <li><a href="#statistics">Statistics</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    <button>Add teacher</button>
+</nav>
+<main>
+    <section id="teachers">
+        <h2>Top Teachers</h2>
+        <form class="filters">
+            <label for="age">Age</label>
+                <select id="age">
+                    <option>18-31</option>
+                    <option>32-45</option>
+                    <option>46-60</option>
+                </select>
+            <label for="region">Region</label>
+                <select id="region">
+                    <option>Europe</option>
+                    <option>Asia</option>
+                    <option>USA</option>
+                </select>
+            <label for="sex">Sex</label>
+                <select id="sex">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            <label>
+                <input type="checkbox">
+                Only with photo
+            </label>
+            <label>
+                <input type="checkbox">
+                Only favorites
+            </label>
+        </form>
+        <div class="teachers-grid">
+            <div class="teacher-profile">
+                <img src="" alt="Ihor Tkachuk">
+                <p class="name">Ihor Tkachuk</p>
+                <p class="subject">Chemistry</p>
+                <p class="country">Ukraine</p>
+            </div>
+            <div class="teacher-profile">
+                <img src="" alt="Pragg Ramenshbabu">
+                <p class="name">Pragg Rameshbabu</p>
+                <p class="subject">Chess</p>
+                <p class="country">India</p>
+            </div>
+            <div class="teacher-profile favorite">
+                <img src="" alt="Floor Jansen">
+                <p class="name">Floor Jansen</p>
+                <p class="subject">Vocal</p>
+                <p class="country">Denmark</p>
+            </div>
+            <div class="teacher-profile">
+                <img src="" alt="John Burke">
+                <p class="name">John Burke</p>
+                <p class="subject">Computer Science</p>
+                <p class="country">Belgium</p>
+            </div>
+            <div class="teacher-profile favorite">
+                <img src="" alt="Ari Tang">
+                <p class="name">Ari Tang</p>
+                <p class="subject">Biology</p>
+                <p class="country">China</p>
+            </div>
+            <div class="teacher-profile">
+                <img src="" alt="Rachel Andrew">
+                <p class="name">Rachel Andrew</p>
+                <p class="subject">Medicine</p>
+                <p class="country">UK</p>
+            </div>
+            <div class="teacher-profile">
+                <div class="teacher-initials"> A.M</div>
+                <p class="name">Anna Muzychuk</p>
+                <p class="subject">Chess</p>
+                <p class="country">Belarus</p>
+            </div>
+            <div class="teacher-profile">
+                <div class="teacher-initials"> R.L</div>
+                <p class="name">Radoslaw Ljuboevic</p>
+                <p class="subject">Physics</p>
+                <p class="country">Poland</p>
+            </div>
+        </div>
+    </section>
+</main>
+<script type="text/javascript" src="./js/app.js"></script>
+</body>
 </html>
