@@ -256,6 +256,108 @@
         <button>Add teacher</button>
     </nav>
 </footer>
+<div class="popup-overlay">
+    <div class="popup popup-teacher-info">
+        <header class="popup-header">
+            <h2>Teacher Info</h2>
+            <button class="popup-close" aria-label="Close">&times;</button>
+        </header>
+        <div class="popup-body">
+            <div class="teacher-info-main">
+                <img src="" alt="Ihor Tkachuk">
+                <div class="teacher-info-details">
+                    <h3>Ihor Tkachuk</h3>
+                    <button class="favorite-star" aria-label="Add to favorites">&#9734;</button>
+                    <p class="teacher-info-subject">Chemistry</p>
+                    <p>Kyiv, Ukraine</p>
+                    <p>35, Male</p>
+                    <a href="mailto:ihor_tkachuk@domain.com">ihor_tkachuk@domain.com</a>
+                    <a href="tel:+380964993252">+380964993252</a>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque ducimus esse quasi
+                repudiandae
+                sint tempore.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque ducimus esse quasi
+                repudiandae
+                sint tempore.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque ducimus esse quasi
+                repudiandae
+                sint tempore.</p>
+            <a href="#">toggle map</a>
+        </div>
+    </div>
+</div>
+<div class="popup-overlay">
+    <div class="popup popup-add-teacher">
+        <header class="popup-header">
+            <h2>Add Teacher</h2>
+            <button class="popup-close" aria-label="Close">&times;</button>
+        </header>
+        <div class="popup-body">
+            <form class="add-teacher-form">
+                <div class="form-field">
+                    <label for="teacher-name">Name</label>
+                    <input id="teacher-name" type="text" placeholder="Enter name">
+                </div>
+
+                <div class="form-field">
+                    <label for="teacher-speciality">Speciality</label>
+                    <select id="teacher-speciality">
+                        <option>Mathematics</option>
+                        <option>Biology</option>
+                        <option>Art</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="teacher-country">Country</label>
+                    <select id="teacher-country">
+                        <option>Ukraine</option>
+                        <option>Poland</option>
+                        <option>England</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="teacher-city">City</label>
+                    <input id="teacher-city" type="text">
+                </div>
+
+                <div class="form-field">
+                    <label for="teacher-email">Email</label>
+                    <input id="teacher-email" type="email">
+                </div>
+                <div class="form-field">
+                    <label for="teacher-phone">Phone</label>
+                    <input id="teacher-phone" type="tel">
+                </div>
+                <div class="form-field">
+                    <label for="teacher-birth">Date of birth</label>
+                    <input id="teacher-birth" type="date">
+                </div>
+                <fieldset class="form-field">
+                    <legend>Sex</legend>
+                    <label for="teacher-male">Male</label>
+                    <input type="radio" name="teacher-sex" id="teacher-male">
+                    <label for="teacher-female">Female</label>
+                    <input type="radio" name="teacher-sex" id="teacher-female">
+                </fieldset>
+                <div class="form-field">
+                    <label for="teacher-color">Background color</label>
+                    <input id="teacher-color" type="color">
+                </div>
+                <div class="form-field">
+                    <label for="teacher-notes">Notes (optional)</label>
+                    <textarea id="teacher-notes"></textarea>
+                </div>
+                <button class="add-teacher-button" type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
 <script type="text/javascript" src="./js/app.js"></script>
 </body>
 </html>
