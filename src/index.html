@@ -16,7 +16,7 @@
 
 <body itemscope itemtype="http://schema.org/WebPage">
 <header class="header">
-    <a class="logo" href="#">Teachinder</a>
+    <a class="logo" href="#"><img src="images/logo.png" alt="Teachinder"></a>
     <form class="search">
         <input type="text" placeholder="Name, note or age to search">
         <button>Search</button>
@@ -29,71 +29,81 @@
         <li><a href="#favorites">Favorites</a></li>
         <li><a href="#about">About</a></li>
     </ul>
-    <button>Add teacher</button>
+    <a href="#add-teacher-popup" class="open-add-teacher">Add teacher</a>
 </nav>
 <main>
     <section id="teachers">
         <h2>Top Teachers</h2>
         <form class="filters">
-            <label for="age">Age</label>
-            <select id="age">
-                <option>18-31</option>
-                <option>32-45</option>
-                <option>46-60</option>
-            </select>
-            <label for="region">Region</label>
-            <select id="region">
-                <option>Europe</option>
-                <option>Asia</option>
-                <option>USA</option>
-            </select>
-            <label for="sex">Sex</label>
-            <select id="sex">
-                <option>Male</option>
-                <option>Female</option>
-            </select>
-            <label>
-                <input type="checkbox">
-                Only with photo
-            </label>
-            <label>
-                <input type="checkbox">
-                Only favorites
-            </label>
+            <div class="filter">
+                <label for="age">Age</label>
+                <select id="age">
+                    <option>18-31</option>
+                    <option>32-45</option>
+                    <option>46-60</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="region">Region</label>
+                <select id="region">
+                    <option>Europe</option>
+                    <option>Asia</option>
+                    <option>USA</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="sex">Sex</label>
+                <select id="sex">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label>
+                    <input type="checkbox">
+                    Only with photo
+                </label>
+            </div>
+            <div class="filter">
+                <label>
+                    <input type="checkbox">
+                    Only favorites
+                </label>
+            </div>
         </form>
         <div class="teachers-grid">
             <div class="teacher-profile">
-                <img src="" alt="Ihor Tkachuk">
+                <a href="#teacher-info-popup"><img src="images/teacher_photo.jpg" alt="Ihor Tkachuk"></a>
                 <p class="name">Ihor Tkachuk</p>
                 <p class="subject">Chemistry</p>
                 <p class="country">Ukraine</p>
             </div>
             <div class="teacher-profile">
-                <img src="" alt="Pragg Rameshbabu">
+                <img src="images/teacher_photo.jpg" alt="Pragg Rameshbabu">
                 <p class="name">Pragg Rameshbabu</p>
                 <p class="subject">Chess</p>
                 <p class="country">India</p>
             </div>
             <div class="teacher-profile favorite">
-                <img src="" alt="Floor Jansen">
+                <img src="images/teacher_photo.jpg" alt="Floor Jansen">
                 <p class="name">Floor Jansen</p>
                 <p class="subject">Vocal</p>
                 <p class="country">Denmark</p>
             </div>
             <div class="teacher-profile">
-                <img src="" alt="John Burke">
+                <img src="images/teacher_photo.jpg" alt="John Burke">
                 <p class="name">John Burke</p>
                 <p class="subject">Computer Science</p>
                 <p class="country">Belgium</p>
             </div>
             <div class="teacher-profile favorite">
-                <img src="" alt="Ari Tang">
+                <img src="images/teacher_photo.jpg" alt="Ari Tang">
                 <p class="name">Ari Tang</p>
                 <p class="subject">Biology</p>
                 <p class="country">China</p>
             </div>
             <div class="teacher-profile">
-                <img src="" alt="Rachel Andrew">
+                <img src="images/teacher_photo.jpg" alt="Rachel Andrew">
                 <p class="name">Rachel Andrew</p>
                 <p class="subject">Medicine</p>
                 <p class="country">UK</p>
@@ -212,7 +222,7 @@
         <button aria-label="Previous" class="arrow-button"> &lsaquo;</button>
         <div class="favorites-list">
             <div class="teacher-profile">
-                <img src="" alt="Ihor Tkachuk">
+                <a href="#teacher-info-popup"><img src="images/teacher_photo.jpg" alt="Ihor Tkachuk"></a>
                 <p class="name">Ihor Tkachuk</p>
                 <p class="country">Ukraine</p>
             </div>
@@ -222,27 +232,33 @@
                 <p class="country">Belarus</p>
             </div>
             <div class="teacher-profile">
-                <img src="" alt="John Burke">
+                <img src="images/teacher_photo.jpg" alt="John Burke">
                 <p class="name">John Burke</p>
                 <p class="country">Belgium</p>
             </div>
             <div class="teacher-profile">
-                <img src="" alt="Ari Tang">
+                <img src="images/teacher_photo.jpg" alt="Ari Tang">
                 <p class="name">Ari Tang</p>
                 <p class="country">China</p>
             </div>
             <div class="teacher-profile">
-                <img src="" alt="Floor Jansen">
+                <img src="images/teacher_photo.jpg" alt="Floor Jansen">
                 <p class="name">Floor Jansen</p>
                 <p class="country">Denmark</p>
             </div>
         </div>
         <button aria-label="Next" class="arrow-button"> &rsaquo;</button>
     </section>
-    <section id="about">
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci aspernatur, beatae
-            doloremque doloribus excepturi hic impedit maxime minima molestiae nulla repudiandae rerum sint sit soluta
-            tempore vel! Accusamus, nulla.</p>
+    <section id="about" class="about">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque ducimus esse quasi
+            repudiandae
+            sint tempore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque ducimus esse quasi
+            repudiandae
+            sint tempore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque ducimus esse quasi
+            repudiandae
+            sint tempore.</p>
     </section>
 </main>
 <footer>
@@ -253,18 +269,18 @@
             <li><a href="#favorites">Favorites</a></li>
             <li><a href="#about">About</a></li>
         </ul>
-        <button>Add teacher</button>
+        <a href="#add-teacher-popup" class="open-add-teacher">Add teacher</a>
     </nav>
 </footer>
-<div class="popup-overlay">
+<div class="popup-overlay" id="teacher-info-popup">
     <div class="popup popup-teacher-info">
         <header class="popup-header">
             <h2>Teacher Info</h2>
-            <button class="popup-close" aria-label="Close">&times;</button>
+            <a href="#" class="popup-close" aria-label="Close">&times;</a>
         </header>
         <div class="popup-body">
             <div class="teacher-info-main">
-                <img src="" alt="Ihor Tkachuk">
+                <img src="images/teacher_photo.jpg" alt="Ihor Tkachuk">
                 <div class="teacher-info-details">
                     <h3>Ihor Tkachuk</h3>
                     <button class="favorite-star" aria-label="Add to favorites">&#9734;</button>
@@ -278,21 +294,15 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque ducimus esse quasi
                 repudiandae
                 sint tempore.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque ducimus esse quasi
-                repudiandae
-                sint tempore.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque ducimus esse quasi
-                repudiandae
-                sint tempore.</p>
             <a href="#">toggle map</a>
         </div>
     </div>
 </div>
-<div class="popup-overlay">
+<div class="popup-overlay" id="add-teacher-popup">
     <div class="popup popup-add-teacher">
         <header class="popup-header">
             <h2>Add Teacher</h2>
-            <button class="popup-close" aria-label="Close">&times;</button>
+            <a href="#" class="popup-close" aria-label="Close">&times;</a>
         </header>
         <div class="popup-body">
             <form class="add-teacher-form">
@@ -310,7 +320,7 @@
                     </select>
                 </div>
 
-                <div class="form-field">
+                <div class="form-field form-field-half">
                     <label for="teacher-country">Country</label>
                     <select id="teacher-country">
                         <option>Ukraine</option>
@@ -319,20 +329,20 @@
                     </select>
                 </div>
 
-                <div class="form-field">
+                <div class="form-field form-field-half">
                     <label for="teacher-city">City</label>
                     <input id="teacher-city" type="text">
                 </div>
 
-                <div class="form-field">
+                <div class="form-field form-field-half">
                     <label for="teacher-email">Email</label>
                     <input id="teacher-email" type="email">
                 </div>
-                <div class="form-field">
+                <div class="form-field form-field-half">
                     <label for="teacher-phone">Phone</label>
                     <input id="teacher-phone" type="tel">
                 </div>
-                <div class="form-field">
+                <div class="form-field form-field-half">
                     <label for="teacher-birth">Date of birth</label>
                     <input id="teacher-birth" type="date">
                 </div>
@@ -343,7 +353,7 @@
                     <label for="teacher-female">Female</label>
                     <input type="radio" name="teacher-sex" id="teacher-female">
                 </fieldset>
-                <div class="form-field">
+                <div class="form-field form-field-color">
                     <label for="teacher-color">Background color</label>
                     <input id="teacher-color" type="color">
                 </div>
