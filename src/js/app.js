@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/extensions
 import { randomUserMock, additionalUsers } from './FE4U-Lab2-mock.js';
 
 const COURSES = [
@@ -144,7 +145,6 @@ function validateUser(user) {
   return { isValid: errors.length === 0, errors };
 }
 
-
 function matchesAge(age, ageFilter) {
   if (typeof ageFilter === 'number') {
     return age === ageFilter;
@@ -163,7 +163,6 @@ function filterUsers(users, filters = {}) {
     && (favorite === undefined || user.favorite === favorite)
     && (age === undefined || matchesAge(user.age, age)));
 }
-
 
 const SORTABLE_FIELDS = ['full_name', 'age', 'b_day', 'country'];
 
@@ -191,7 +190,6 @@ function sortUsers(users, field = 'full_name', order = 'asc') {
     return compareValues(a, b, field) * direction;
   });
 }
-
 
 function matchesSearch(user, query) {
   if (typeof query === 'number') {
