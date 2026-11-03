@@ -157,10 +157,6 @@ main h2 {
   width: 75px;
 }
 
-#region {
-  width: 90px;
-}
-
 #sex {
   width: 85px;
 }
@@ -293,7 +289,10 @@ main h2 {
 
 .favorites-list {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .arrow-button {
@@ -565,8 +564,61 @@ fieldset.form-field label {
   color: #fff;
 }
 
+.popup-overlay.is-open {
+  display: flex;
+}
+
+.empty-message {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #999;
+  text-align: center;
+}
+
+.favorites-list .teacher-profile {
+  flex: 0 0 calc((100% - 80px) / 5);
+}
+
+.statistics-table th:not([data-sort]) {
+  cursor: default;
+}
+
+.statistics-table th.is-sorted {
+  background-color: #f9f5f9;
+  border-bottom-color: #222;
+}
+
+.statistics-table th.is-sorted::after {
+  content: " \2193";
+  color: #2b9cb3;
+}
+
+.statistics-table th.is-sorted.is-desc::after {
+  content: " \2191";
+}
+
+#country {
+  width: 140px;
+}
+
+.form-field .is-invalid,
+fieldset.is-invalid {
+  border-color: #f75c49;
+  outline: 1px solid #f75c49;
+}
+
+.form-error {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #f75c49;
+}
+
 @media (max-width: 767px) {
   .teachers-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .favorites-list .teacher-profile {
+    flex-basis: 45%;
   }
 }

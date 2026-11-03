@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 import {
   getFormattedUsers,
   validateUser,
@@ -6,7 +8,7 @@ import {
   findUser,
   getMatchPercentage,
 // eslint-disable-next-line import/extensions
-} from './app.js';
+} from './users.js';
 
 const users = getFormattedUsers();
 
@@ -15,7 +17,7 @@ console.log('1. Кількість викладачів:', users.length);
 console.log('2. Перевірка Norbert Weishaupt:', validateUser(users[0]));
 console.log('   Перевірка Olivia Storm:', validateUser(users[users.length - 1]));
 
-const filtered = filterUsers(users, { gender: 'male', age: { min: 30, max: 50 } });
+const filtered = filterUsers(users, { gender: 'Male', age: { min: 30, max: 50 } });
 console.log('3. Чоловіки 30-50 років:', filtered.map((user) => `${user.full_name} (${user.age})`));
 
 const sortedByAge = sortUsers(users, 'age', 'desc');
